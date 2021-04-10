@@ -29,7 +29,7 @@ const Formulario = ({ createdTime }) => {
 
     try {
       const respuesta = await axios.post(
-        "http://localhost:8080/get-time",
+        "https://time-utc.herokuapp.com/get-time",
         time
       );
       console.log(respuesta.data.response)
